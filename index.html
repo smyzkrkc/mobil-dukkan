@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Mobil Dükkân"><meta name="theme-color" content="#111b27"><meta name="format-detection" content="telephone=no"><link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAK90lEQVR42u2de7BVVR3Hf7+19z7Pfc7m8jQRCAghUXFSp0x8TFNGmTXa0OBQKZCmyYyGmJNZ5gPzka8ZIksZFRgdFQsbDTF0ElEyFcdAIZ0xHoryvvfc8z57rV9/7MMVC+Xcc/Ceu8/5fv66w1zu3XPW5671XWvt9Vs8btZOAuBAKHwEAHIAyAEgB4AcAHIAyAEgB4AcAHIAyAEA5ACQA0AOADkA5ACQA0AOADkA5ACQAwDIASAHgBwAcgDIASAHgBwAcgDIASAHAJADQA4AOcAhxG412ZmYibmvf68ICZExkKNfYikyQvmyVHzSWvpaSsWORbEo24qMkAjk6Ce9hSJjaG9WYg5NOMIeN9waP9zus85DhIhp226zYYu/8V1/T7ckYxx1SBvI0Q86jFxRog6f/9XY1FNjk0Y7ttW0h3l7m37yn6Ulzxa27TZeksPuB4e61KRtUVdOxh1u3XZh6vjPOcE/GkPmYL16b3v9g3ZDzKRU9dt2dJorFnaveLXc4YbbjxDLYVvUmZUTxzuL5npegn1NiknVMP0yQop7PXbUMk4ZIWMo6Lp+8UD2nuX5wZ7yNYaVPh9NMnmZNMZePNdLJ1jva5IaZzTZgmhT66RGhLwk1/iTlVUNpPPOcyu+3L+yMDgdVj9CKQczVTR5Sb7ronRghlXbeo0xpBQtXV284aFcLMK1zCmUomxBvjs5evU0V6mauhzFZIiM0LU/cN/Y4q/7j5+IcRhnuXZIu429WXPNdPfI4Zave9FnBKHgwb8XN77rD3SVb2oKE6WKLHmmMOfsZDrBNY4vikkbikf42unu2Td0kqDn6Ktuo1ShwzrUtFNjRmrtM/bn19PdRJRr/I+KKVeUaafFUnHuVVgJ1l1OONI5aYLzwoZKOh6+cGqHcQ00X5IzvhAdlFZGercYGjTtsaPtJVd49XjZy+83hpRFU06IPreuzH2/atuePYfWctwYp+fT75mdGlPT0qRIPQuYqrbWtdSHvgZfTBrjRB1kjj7BGIo4PHGU3fPpB2Yw1T7E8Ke9Zho8WNBRjTnMGuypzqw4dsiW1cM6lXXs/20MbejxNcXNO0xT2oCJtCE3zuecHO1w1f651Va9XlaBHA3vaOz3RXdBZt3R9ezrZaWoaVMDJhG6+6/5xXO9CSNss28dRbC30rRRRshStHBF4em15RFDVHNnBJaiTdv19Q/lFs31mAkbb83Pp0T00r8rbpx93eS9UG3IS6g3t/jZongJNkKMN8GaTsQ++GZbn/VktkVMeE2w/0UQPAzkAJADQA4AOQDkAJADQA4AOQCAHAByAMgBIAeAHAByAMgBIAeAHAByAAA5AOQAkIP65Ewbc1jPrkGOT/d0jBEqVSRfkiYWpIMc/bGUZbEswzrU/XO848Y6O7uMbREz5ABEImSEbpqROv3YyINXejO+Ft/RabRufT8gBx20ZuGebnPl1OTkiU7ZJzfGt8xK3TwzFYu0zuElyFGnGXuzcuaJ0dlnJbShiE0iVNE06+vxC76RyOTFUpCjXaNGoUQjBqvbLkjJvhPbIuRYtHGrv3BF3o2xEcjRrlHDN3LnRelBaWUMKa5ejVAoyZx7undnwlepB3Ic4qjx5c87vq4WlAoKnl7/UO7ltyoDwl/aHHIcYMWCexk1LKtqhm3Rn14sLVyRH5xWFU2YyrZajNCaPrlA5f9HDSYyhixFb72nr7qvO5VQrR012lEOW1G2IG6cHZvMxxc+/4SocdkfMtmiOFbrT2LbSw7Hoq68jB5mPXLVgF+e6+7KmAPOQg8aNbxE60eNlr3j7eMKF3+w10w+OrLocs9L8rjh1htb/HuWFwalef/7DBA12q7nYCZf0/e/El881/OS7GsSQzf80J16SnRHp+mpZ4qo0XZyMFPFpwEu33i+++G1LExG6MbzU5MnRjqz1V1WRI22k0OEog69v8dcPD8TuCL7bj5IJ3jRXG/sZ6xMXqIOI2q047CiDaUT/PTa8tUPZINrUGTffSjpBC+YnR7iqW279be+GL0EUaMNZyva0MAU/+6J/Py/5G2LtCYishRpQ0ePsu+9ND1hhP3bWSlG1GjPqazWNKxD3bw098jzRdsiX394X87x45zl13cMSqtgxEHUaDs5hEiE4hG+7O7uNRsqtkW+qc5yRWj/+7kQNdpxhVSElKJ4lC+an1m3ybdVtVB6kFJ7zEDUaNO9FWMoYtOebjPj9q69WQmGlZ7q+oga7b4rqw2l4vzBXjPj9q7OnIhU+w8jZARRo+3f5/A1eQl+4c3ypXdnLFWdtjCRbdF1D+Zeafuo0e4v+1Q0DfHUM6+VZy/IbO80liJfy53L8oufLQxs+6hBbbXx9nH9h5vgR1eXXn7LH3+Etb3TvP6O7yVDeY0j5PhU8ulAl3d2ma27tGNRh4vRBHJ8NJ86NkUd7kmmAHJ8ZP1DCz4GBFIAOQDkAJADQA4AOQDkAJADQA4AOQCAHAByAMgBIAeAHFTfgWk8DOQ4MBW/vzRJUPGhNd5ct1vgVR1iGjlUlSviuCxE3LxDdbaifEmGeFYswiLEkKPpf6kidPGZiadeKb+3S0cjTSscy0RGiEQuPycZdUib0N+/YbdASScRGjXUevyaAQueyG/daZpSO5aJtFAiyjPPiH9pgiNClgr94GK3RhoN/Lh5ZqqfjHStkUntVrosp+5WCS7NcCwiqlZnUIqo9/klyBlK4e3z/je+1JcAg0I/FlHZp4ovyRhXm1nVNboQjiZQ65xLIKLuotzx59zDq4qlMp0+KfKrc5Mjh1otMzq0nRyHqtmCoi6zF2SWrSldOCU+MK3ufarw6tuVv82r1vpp/Bcxh1UyFcb65RVf3n5P9/zdUwPH3RTT8+vLj60u3ffT9K0/Sv38e8mVv+l4f4/54/ICc6Nn4ILH27pT7+kWO4Q1HcKandZvrjTefwSt9dLGyuED1bdPilV8KZRl9DDrtGOcFzdWqOFoGWTkjVt1rmDCeKeTCuPp1kRUrVpfKZQkWORokLGHWzu6zPpNvmNzPMLFsqzb5I89zGq8ZwoGlBVrSxzO5TAVxggZi9A77/tPry032PMH61RTTogeNdKefkvnsjWlVevK027q2pUxP/5mvMHJR1BEavMO/dy/ym4slJUdVGjrEvMdy3KZvKh9db3qXD0jcmN835z0qKHWzNu7vnNd56bteskVA44aaRupf1gRqj7VrUtzXTmxLQrjYimPm7UzpNds7c6YqafE5v8k7RtSDVwk3jMlWbfJL5Rk0hg7qMjQSKCp+OTYdP/Kws/u7R6UViEt7mCHty7PoLRaurrkJbPzznODf7GsegaCYHVVMR3zWbsn1tSdHwMPHJseXlW8+oFsR0qFt+yHHeq6TR0uL1xR6MqZeeelvCT3tE09jSrBnmp1KKnv5wTl54jorsfztz2Wi0cYi2BNLmr+6PPFNzb7l5yVmHJ81I3X3x7WofD1HxvLv3+ysPK10gBXNT7fQeY4BPkjV5SyT6OHWSdPdCaOtMcfYffZomTwttG2XXr9Zn/NhsqbW3xtyEuwH/4iUq0gR7DrxkzFMhXKIlTdX+3jPkwbikcoHuHGl1YxrBxKgrgQcSgW4aZ05sF6lzHVJyFsvKH020dWNghHEwDh3AqAHPgIAOQAkANADgA5AOQAkANADgA5AOQAkAMAyAEgB4AcAHIAyAEgB4AcAHIAyAEgBwCQA0AOADkA5ACQA0AOADkA5ACQA0AOACAHgBwAcgDIASAHgBygf/JfTwfrR6OAgFEAAAAASUVORK5CYII="><link rel="icon" type="image/png" href="data:image/png;base64,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"><title>Mobil Dükkân</title>
+<style>
+:root{--bg:#f3f4f6;--card:#fff;--ink:#17212b;--muted:#687582;--line:#e2e7eb;--brand:#2563eb;--brand2:#1d4ed8;--nav:#111b27}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,sans-serif}.layout{min-height:100vh;display:grid;grid-template-columns:230px 1fr}aside{background:var(--nav);color:#e5edf5;padding:24px 16px;display:flex;flex-direction:column;gap:26px}.brand{font-size:19px;font-weight:800;color:white;padding:0 8px}.brand small{display:block;color:#9aabba;font-size:12px;font-weight:500;margin-top:3px}nav{display:grid;gap:6px}nav button{border:0;background:transparent;color:#d2dce5;text-align:left;padding:11px 12px;border-radius:9px;font-weight:600;cursor:pointer}nav button:hover,nav button.active{background:#26384c;color:#fff}.aside-note{margin-top:auto;color:#94a3b1;font-size:12px;padding:8px}main{padding:28px;min-width:0;max-width:1500px;width:100%;margin:auto}.top{display:flex;align-items:center;gap:14px;margin-bottom:22px;flex-wrap:wrap}.top h1{margin:0;font-size:29px}.top .right{margin-left:auto;display:flex;gap:9px;flex-wrap:wrap}.muted,.sub{color:var(--muted)}.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:8px;padding:9px 13px;font-weight:650;cursor:pointer}.btn:hover{background:#f8fafc}.btn:disabled{opacity:.5;cursor:not-allowed}.primary{background:var(--brand);color:#fff;border-color:var(--brand)}.primary:hover{background:var(--brand2)}.btn.danger{color:#b91c1c;border-color:#fecaca}.btn.danger:hover{background:#fef2f2}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-bottom:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:17px}.kpi label{color:var(--muted);text-transform:uppercase;font-size:12px;font-weight:700;letter-spacing:.4px}.kpi strong{display:block;font-size:26px;margin:5px 0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.kpi span{font-size:13px;color:var(--muted)}.section{margin-bottom:16px}.section h2,.card h2{font-size:18px;margin:0 0 14px}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:13px}.toolbar input,.field input,.field select{border:1px solid var(--line);border-radius:8px;padding:10px 11px;background:#fff;font:inherit}.toolbar input{flex:1;min-width:200px}.field{display:grid;gap:5px;margin-bottom:12px}.field label{font-size:12px;color:var(--muted);font-weight:700}.field input,.field select{width:100%}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px;min-width:760px}th,td{text-align:left;padding:11px 10px;border-bottom:1px solid var(--line);white-space:nowrap}th{font-size:11px;letter-spacing:.45px;text-transform:uppercase;color:var(--muted);background:#f8fafc}td small{display:block;color:var(--muted);font-size:12px}.badge{display:inline-block;border-radius:99px;background:#e8eef7;color:#33506d;padding:3px 8px;font-size:12px;font-weight:700}.badge.low{background:#fff1d6;color:#a16207}.badge.out{background:#fee2e2;color:#b91c1c}.badge.ok{background:#dcfce7;color:#166534}tr.returned td{color:#9aa5b1}tr.returned td b{text-decoration:line-through}.actions{display:flex;gap:6px}.actions .btn{padding:6px 9px;font-size:12px}.empty{padding:20px;text-align:center;color:var(--muted)}.two{display:grid;grid-template-columns:1.5fr 1fr;gap:16px;align-items:start}.summary-line{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line)}.total{font-size:22px;font-weight:800;padding-top:12px}.stack{display:grid;gap:10px;margin-top:14px}.file-btn{display:block;text-align:center}.sr-only{position:absolute;width:1px;height:1px;opacity:0;overflow:hidden}.card p{margin:0 0 6px}.modal .lead{margin:-8px 0 14px;color:var(--muted)}.modal-actions{flex-wrap:wrap}.modal-bg{position:fixed;inset:0;background:#0f172a99;display:grid;place-items:center;padding:18px;z-index:10}.modal{width:min(540px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:14px;padding:20px}.modal h2{margin:0 0 16px}.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:16px}.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:#17212b;color:white;padding:11px 16px;border-radius:9px;z-index:20;box-shadow:0 5px 22px #0003}
+@media(max-width:900px){.layout{grid-template-columns:1fr}aside{padding:12px 14px;gap:10px;position:sticky;top:0;z-index:5}.brand{font-size:17px!important}nav{display:flex;overflow:auto}nav button{white-space:nowrap;padding:9px 11px}.aside-note{display:none}main{padding:18px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}}@media(max-width:520px){main{padding:14px}.top h1{font-size:24px}.top .right{margin:0;width:100%}.grid{gap:9px}.card{padding:13px}.kpi strong{font-size:23px}.toolbar input{min-width:100%}}
+
+/* iPhone / iOS dokunmatik ekran uyumu */
+html{min-height:100%;-webkit-text-size-adjust:100%;scroll-padding-top:env(safe-area-inset-top)}body{min-height:100vh;min-height:100dvh;padding-bottom:env(safe-area-inset-bottom)}button,input,select{font:inherit}button,.btn{touch-action:manipulation;-webkit-tap-highlight-color:transparent}input,select{font-size:16px!important}main{padding-left:max(28px,env(safe-area-inset-left));padding-right:max(28px,env(safe-area-inset-right))}.modal-bg{padding: max(18px,env(safe-area-inset-top)) max(18px,env(safe-area-inset-right)) max(18px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left))}.modal{max-height:calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 32px);overscroll-behavior:contain}
+@media(max-width:900px){aside{padding-top:max(12px,env(safe-area-inset-top));padding-left:max(14px,env(safe-area-inset-left));padding-right:max(14px,env(safe-area-inset-right))}nav{scrollbar-width:none;-webkit-overflow-scrolling:touch}nav::-webkit-scrollbar{display:none}}
+@media(max-width:600px){main{padding:16px max(12px,env(safe-area-inset-right)) 24px max(12px,env(safe-area-inset-left))}.top{gap:10px;margin-bottom:15px}.top h1{font-size:24px}.top .right{width:100%;margin-left:0}.top .right .btn{flex:1;min-height:44px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.card{border-radius:11px;padding:13px}.kpi strong{font-size:20px}.kpi label{font-size:10px}.toolbar{gap:8px}.toolbar input{min-width:100%;min-height:44px}.toolbar .btn,.actions .btn{min-height:40px}.stack .btn{min-height:46px}.table-wrap{margin-inline:-13px;padding-inline:13px;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch}table{min-width:700px}th,td{padding:10px 9px}.two{gap:12px}.field{margin-bottom:14px}.field input,.field select{min-height:46px}.modal-bg{align-items:end;padding:0;background:#0f172a99}.modal{width:100%;max-height: min(92dvh,850px);border-radius:18px 18px 0 0;padding:20px max(18px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(18px,env(safe-area-inset-left))}.modal-actions{position:sticky;bottom:0;background:#fff;padding-top:10px}.modal-actions .btn{min-height:44px;flex:1}.toast{bottom:max(22px,calc(env(safe-area-inset-bottom) + 12px));width:max-content;max-width:calc(100% - 28px);text-align:center}}
+@media(max-width:360px){main{padding-left:10px;padding-right:10px}.grid{gap:7px}.kpi strong{font-size:18px}.kpi{padding:11px}}
+/* ---- iPhone uygulama görünümü ---- */
+td .v{display:block}
+nav svg{display:none}
+html.modal-open,html.modal-open body{overflow:hidden}
+a[href^="tel:"]{color:var(--brand);text-decoration:none;font-weight:600}
+.tip{display:flex;gap:12px;align-items:center;background:#eff6ff;border-color:#bfdbfe}.tip p{margin:4px 0 0}.tip .btn{margin-left:auto;flex:none}
+.mono{font-variant-numeric:tabular-nums;letter-spacing:.2px}
+body{overscroll-behavior-y:none}
+input[type=search]{-webkit-appearance:none;appearance:none}
+.btn,nav button{-webkit-user-select:none;user-select:none}
+.btn:active{transform:scale(.97)}
+@media(max-width:900px){
+  aside{display:block;padding:max(10px,env(safe-area-inset-top)) max(16px,env(safe-area-inset-right)) 10px max(16px,env(safe-area-inset-left));text-align:center}
+  .brand small{display:none}
+  nav{position:fixed;left:0;right:0;bottom:0;z-index:8;display:grid!important;grid-template-columns:repeat(4,1fr);gap:0;background:rgba(17,27,39,.96);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid #26384c;padding:6px max(6px,env(safe-area-inset-right)) max(6px,env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left))}
+  nav button{display:flex;flex-direction:column;align-items:center;gap:3px;padding:6px 2px!important;font-size:11px;font-weight:600;border-radius:10px;text-align:center;color:#94a3b1;min-height:50px}
+  nav button.active,nav button:hover{background:transparent;color:#fff}
+  nav button.active svg{fill:#60a5fa}
+  nav svg{display:block;width:24px;height:24px;fill:currentColor}
+  main{padding-bottom:calc(84px + env(safe-area-inset-bottom))!important}
+  .toast{bottom:calc(80px + env(safe-area-inset-bottom))!important}
+}
+@media(max-width:600px){
+  .table-wrap:has(table.cards){margin-inline:0;padding-inline:0;overflow:visible}
+  table.cards{min-width:0;font-size:14px}
+  table.cards thead{display:none}
+  table.cards,table.cards tbody,table.cards tr,table.cards td{display:block;width:100%}
+  table.cards tr{border:1px solid var(--line);border-radius:12px;padding:4px 12px;margin-bottom:10px;background:#fff}
+  table.cards tr:last-child{margin-bottom:0}
+  table.cards td{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:7px 0;border-bottom:1px dashed var(--line);white-space:normal;text-align:right}
+  table.cards td::before{content:attr(data-label);color:var(--muted);font-size:12px;font-weight:600;text-align:left;flex:none}
+  table.cards td[data-label=""]::before{display:none}
+  table.cards td small{display:block}
+  table.cards td .v{display:block;text-align:right;min-width:0;overflow-wrap:anywhere}
+  table.cards td.title .v{text-align:left}
+  table.cards td.act .v{width:100%}
+  .toolbar .btn{width:100%;min-height:46px}
+  table.cards td.title{display:block;text-align:left;font-size:16px;padding:9px 0 8px}
+  table.cards td.title::before{display:none}
+  table.cards td.date{color:var(--muted);font-size:13px}
+  table.cards td.act{border-bottom:0;padding:10px 0 8px}
+  table.cards td.act .actions{width:100%}
+  table.cards td.act .btn{flex:1;min-height:44px;font-size:14px}
+  table.cards td.act.none{display:none}
+  table.cards td.act + td,table.cards tr td:nth-last-child(1):not(.act){border-bottom:0}
+  table.cards td.empty{display:block;text-align:center;border:0}
+  table.cards tr:has(td.empty){border:0;padding:0}
+  table.cards tr.returned{opacity:.7}
+  .tip{flex-direction:column;align-items:stretch}.tip .btn{margin-left:0;min-height:44px}
+  .modal-actions{flex-wrap:wrap}.modal-actions .btn{flex:1 1 40%}
+}
+@media (display-mode: standalone){aside{padding-top:max(14px,env(safe-area-inset-top))}}
+
+/* sayfa içi onay, giriş ekranı, çalışanlar */
+#ask .modal-bg{z-index:30}
+.ask-msg{white-space:pre-line;margin:0 0 6px;font-size:16px;line-height:1.5}
+.btn.dangerfill{background:#dc2626;border-color:#dc2626;color:#fff}.btn.dangerfill:hover{background:#b91c1c}
+.loading{padding:64px 0;text-align:center;color:var(--muted)}
+.tip.warn{background:#fff7ed;border-color:#fed7aa}
+.btn:focus-visible,nav button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #93c5fd;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.btn:active{transform:none}}
+@media(max-width:900px){.layout{grid-template-rows:auto 1fr;align-content:start}}
+.logged-out nav{display:none!important}.logged-out main{padding-bottom:32px!important}
+.auth{display:grid;place-items:center;min-height:60vh;padding:12px 0}
+.auth .card{width:min(420px,100%);padding:24px}
+.auth h1{margin:0 0 4px;font-size:26px}
+.auth .sub{margin:0 0 16px}
+.seg{display:grid;grid-template-columns:1fr 1fr;background:#eef2f7;border-radius:10px;padding:4px;margin-bottom:16px}
+.seg button{border:0;background:transparent;padding:10px;border-radius:8px;font-weight:700;color:var(--muted);cursor:pointer;min-height:42px}
+.seg button.on{background:#fff;color:var(--ink);box-shadow:0 1px 3px #0002}
+.btn.wide{width:100%;min-height:48px;font-size:16px}
+.auth-msg{margin:14px 0 0;padding:12px;border-radius:10px;background:#eff6ff;color:#1e3a8a;line-height:1.5}
+.small{font-size:13px;margin-top:14px!important}
+.members{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:8px}
+.member{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;overflow-wrap:anywhere}
+.member .btn{padding:6px 10px;font-size:13px;flex:none}
+#memberForm{margin-bottom:6px}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script></head><body>
+<div class="layout"><aside><header class="brand">MOBİL DÜKKÂN<small>Stok & Satış Paneli</small></header><nav aria-label="Bölümler"><button data-page="ozet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h6V4H4zm0 7h6v-5H4zm10 0h6v-9h-6zm0-16v5h6V4z"/></svg><span>Genel Bakış</span></button><button data-page="stok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H8a3 3 0 0 0-3 3v16a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zm-4 20a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6zm5-4H7V4h10z"/></svg><span>Telefonlar</span></button><button data-page="gecmis"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3a9 9 0 0 0-9 9H1l3.9 3.9L9 12H6a7 7 0 1 1 2 4.9l-1.4 1.4A9 9 0 1 0 13 3zm-1 5v5l4.3 2.5.7-1.2-3.5-2.1V8z"/></svg><span>Satışlar</span></button><button data-page="ayar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6-2-3.4-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4l-.4 2.7a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.4L6.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6 2 3.4 2.5-1a7.4 7.4 0 0 0 1.7 1l.4 2.7h4l.4-2.7a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.4zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7z" transform="translate(-1 0)"/></svg><span>Ayarlar</span></button></nav><div class="aside-note" id="asideNote"></div></aside><main id="main"></main></div><div id="modal"></div><div id="ask"></div><div id="toast" aria-live="polite"></div>
+<script>
+(()=>{
+'use strict';
+const SB_URL='https://wzdkcbhqxaffvdbyszvc.supabase.co';
+const SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind6ZGtjYmhxeGFmZnZkYnlzenZjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMyNzMxODEsImV4cCI6MjEwODg0OTE4MX0.7vOF4VgBChpbfkPm6hGZFyIHmjCl8APrMQ46aeo7CKQ';
+const LKEY='mobilDukkanPanel_v1';
+const fmt=n=>new Intl.NumberFormat('tr-TR',{style:'currency',currency:'TRY',maximumFractionDigits:0}).format(+n||0);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,8);
+const el=id=>document.getElementById(id);
+const low=s=>String(s??'').toLocaleLowerCase('tr');
+const sum=(a,f)=>a.reduce((x,y)=>x+f(y),0);
+const profit=s=>(s.price-(s.cost||0))*(s.qty||1);
+const nm=x=>((x.brand||'')+' '+(x.model||'')).trim();
+const sub=x=>[x.storage,x.color].filter(Boolean).join(' · ')||'—';
+const dShort=d=>d?new Date(d).toLocaleDateString('tr-TR'):'—';
+const dLong=d=>new Date(d).toLocaleString('tr-TR',{dateStyle:'short',timeStyle:'short'});
+const nowIso=()=>new Date().toISOString();
+const money=v=>Math.max(0,parseInt(String(v??'').replace(/\D/g,''),10)||0);
+const td=(label,html,cls='')=>'<td data-label="'+esc(label)+'"'+(cls?' class="'+cls+'"':'')+'><span class="v">'+html+'</span></td>';
+const isIOS=/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+const isStandalone=window.navigator.standalone===true||(window.matchMedia&&matchMedia('(display-mode: standalone)').matches);
+function lsGet(k){try{return localStorage.getItem(k)}catch{return null}}
+function lsSet(k,v){try{localStorage.setItem(k,v);return true}catch{return false}}
+
+/* ---------- Veri dönüşümleri ---------- */
+function valid(d){return d&&Array.isArray(d.sales)&&(Array.isArray(d.devices)||Array.isArray(d.products))}
+function normDev(x){return {id:String(x.id||uid()),brand:String(x.brand||''),model:String(x.model||''),storage:String(x.storage||''),color:String(x.color||''),imei:String(x.imei||''),cost:Math.max(0,Math.round(+x.cost||0)),price:Math.max(0,Math.round(+x.price||0)),addedAt:x.addedAt||nowIso()}}
+function normSale(s){
+  const o={...s,id:String(s.id||uid())};
+  o.qty=Math.max(1,Math.round(+o.qty||1));o.price=Math.round(+o.price||0);o.cost=Math.round(+o.cost||0);o.total=Math.round(+o.total||o.price*o.qty);
+  if(!o.status)o.status='ok';if(o.paid==null)o.paid=o.payment!=='Veresiye';if(!o.name)o.name=nm(o);if(!o.date)o.date=nowIso();
+  return o;
+}
+function migrate(d){
+  const now=nowIso();
+  (d.sales||[]).forEach(s=>{if(s.cost==null){const p=(d.products||[]).find(x=>x.id===s.productId);s.cost=p?+p.cost||0:0}});
+  let devices=d.devices;
+  if(!Array.isArray(devices)){
+    devices=[];
+    (d.products||[]).forEach(p=>{const n=Math.max(0,Math.floor(+p.stock)||0);for(let i=0;i<n;i++)devices.push({id:i?uid():(p.id||uid()),brand:p.brand,model:p.model,storage:p.storage,color:p.color,imei:i?'':(p.imei||''),cost:p.cost,price:p.price,addedAt:now})});
+  }
+  return {devices:devices.map(normDev),sales:(d.sales||[]).map(normSale)};
+}
+const devToRow=x=>({id:x.id,brand:x.brand,model:x.model,storage:x.storage,color:x.color,imei:x.imei,cost:x.cost,price:x.price,added_at:x.addedAt});
+const devFromRow=r=>normDev({id:r.id,brand:r.brand,model:r.model,storage:r.storage,color:r.color,imei:r.imei,cost:r.cost,price:r.price,addedAt:r.added_at});
+const saleToRow=s=>({id:s.id,date:s.date,device_id:s.deviceId||null,brand:s.brand||'',model:s.model||'',name:s.name||'',storage:s.storage||'',color:s.color||'',imei:s.imei||'',qty:s.qty,price:s.price,list_price:s.listPrice||0,cost:s.cost||0,total:s.total,customer:s.customer||'',phone:s.phone||'',payment:s.payment||'Kart',paid:!!s.paid,status:s.status||'ok',added_at:s.addedAt||null,paid_at:s.paidAt||null,returned_at:s.returnedAt||null});
+const saleFromRow=r=>normSale({id:r.id,date:r.date,deviceId:r.device_id,brand:r.brand,model:r.model,name:r.name,storage:r.storage,color:r.color,imei:r.imei,qty:r.qty,price:r.price,listPrice:r.list_price,cost:r.cost,total:r.total,customer:r.customer,phone:r.phone,payment:r.payment,paid:r.paid,status:r.status,addedAt:r.added_at,paidAt:r.paid_at,returnedAt:r.returned_at});
+
+/* ---------- Durum ---------- */
+let sb=null,session=null,me='';
+let stage='boot';             // boot | auth | notmember | loading | ready | error
+let authTab='in',authBusy=false,authMsg='';
+let data={devices:[],sales:[]},members=[];
+let page='ozet',query='',saleQuery='',channel=null,linkLost=false;
+const sortSales=()=>data.sales.sort((a,b)=>String(b.date).localeCompare(String(a.date)));
+const sortDevs=()=>data.devices.sort((a,b)=>String(b.addedAt).localeCompare(String(a.addedAt)));
+
+let toastTimer;
+function toast(s){el('toast').innerHTML='<div class="toast" role="status">'+esc(s)+'</div>';clearTimeout(toastTimer);toastTimer=setTimeout(()=>el('toast').innerHTML='',3200)}
+function errMsg(e){
+  const m=String(e&&(e.message||e.error_description)||'');
+  if(/Failed to fetch|NetworkError|network/i.test(m))return 'İnternet bağlantısı yok. Bağlanınca tekrar deneyin.';
+  if(/row-level security|permission|JWT/i.test(m))return 'Bu işlem için yetkiniz yok. Çıkış yapıp tekrar girin.';
+  return 'Kaydedilemedi: '+(m||'bilinmeyen hata');
+}
+async function run(q){const {error}=await q;if(error){toast(errMsg(error));return false}return true}
+function upsert(arr,x){const i=arr.findIndex(a=>a.id===x.id);if(i<0)arr.unshift(x);else arr[i]=x}
+
+const store={
+  async putDevice(x){upsert(data.devices,x);sortDevs();refresh();return run(sb.from('devices').upsert(devToRow(x)))},
+  async delDevice(id){data.devices=data.devices.filter(d=>d.id!==id);refresh();return run(sb.from('devices').delete().eq('id',id))},
+  async putSale(s){upsert(data.sales,s);sortSales();refresh();return run(sb.from('sales').upsert(saleToRow(s)))},
+  async replaceAll(next){
+    data={devices:next.devices,sales:next.sales};sortDevs();sortSales();refresh();
+    if(!await run(sb.from('devices').delete().not('id','is',null)))return false;
+    if(!await run(sb.from('sales').delete().not('id','is',null)))return false;
+    for(let i=0;i<next.devices.length;i+=500)if(!await run(sb.from('devices').insert(next.devices.slice(i,i+500).map(devToRow))))return false;
+    for(let i=0;i<next.sales.length;i+=500)if(!await run(sb.from('sales').insert(next.sales.slice(i,i+500).map(saleToRow))))return false;
+    return true;
+  }
+};
+
+/* ---------- IMEI ---------- */
+function imeiOk(s){if(!/^\d{15}$/.test(s))return false;let t=0;for(let i=0;i<15;i++){let d=+s[i];if(i%2){d*=2;if(d>9)d-=9}t+=d}return t%10===0}
+function findImei(text){
+  const c=[];
+  (text.match(/\d(?:[ \-]?\d){14,}/g)||[]).forEach(m=>{const d=m.replace(/\D/g,'');for(let i=0;i+15<=d.length;i++)c.push(d.slice(i,i+15))});
+  return {valid:c.find(imeiOk)||null,any:c[0]||null};
+}
+let tessPromise=null;
+function loadTesseract(){
+  if(window.Tesseract)return Promise.resolve();
+  if(!tessPromise)tessPromise=new Promise((ok,no)=>{const sc=document.createElement('script');sc.src='https://cdn.jsdelivr.net/npm/tesseract.js@5.1.1/dist/tesseract.min.js';sc.onload=ok;sc.onerror=()=>{tessPromise=null;sc.remove();no()};document.head.appendChild(sc)});
+  return tessPromise;
+}
+
+/* ---------- Sayfa içi onay penceresi ---------- */
+let askDone=null;
+function ask(msg,{ok='Evet',cancel='Vazgeç',danger=false}={}){
+  if(askDone)askDone(false);
+  return new Promise(res=>{
+    const box=el('ask');
+    box.innerHTML='<div class="modal-bg ask-bg"><div class="modal ask" role="alertdialog" aria-modal="true" aria-labelledby="askMsg"><p class="ask-msg" id="askMsg"></p><div class="modal-actions"><button type="button" class="btn" id="askNo">'+esc(cancel)+'</button><button type="button" class="btn '+(danger?'dangerfill':'primary')+'" id="askYes">'+esc(ok)+'</button></div></div></div>';
+    el('askMsg').textContent=msg;
+    const done=v=>{askDone=null;box.removeEventListener('click',h,true);box.innerHTML='';res(v)};
+    const h=e=>{
+      if(e.target.closest('#askYes')){e.stopPropagation();done(true)}
+      else if(e.target.closest('#askNo')||e.target.classList.contains('ask-bg')){e.stopPropagation();done(false)}
+    };
+    box.addEventListener('click',h,true);askDone=done;
+    setTimeout(()=>{const y=el('askYes');if(y)y.focus()},30);
+  });
+}
+
+/* ---------- Yardımcı HTML ---------- */
+function header(t,a=''){return '<div class="top"><h1>'+t+'</h1><div class="right">'+a+'</div></div>'}
+function field(label,name,value,ph='',type='text',attrs={}){
+  const extra=Object.entries(attrs).filter(([,v])=>v!==''&&v!=null).map(([k,v])=>' '+k+'="'+esc(v)+'"').join('');
+  return '<div class="field"><label for="'+name+'">'+label+'</label><input id="'+name+'" name="'+name+'" type="'+type+'" value="'+esc(value)+'" placeholder="'+esc(ph)+'"'+extra+'></div>';
+}
+const line=(k,v)=>'<div class="summary-line"><span class="muted">'+k+'</span><b>'+v+'</b></div>';
+const active=()=>data.sales.filter(s=>s.status!=='iade');
+const addBtn='<button class="btn primary" data-new>+ Telefon ekle</button>';
+const numAttrs={inputmode:'numeric',pattern:'[0-9]*',autocomplete:'off',enterkeyhint:'next'};
+
+function groups(){
+  const m=new Map();
+  data.devices.forEach(x=>{
+    const k=low([x.brand,x.model,x.storage,x.color].join('|'));
+    let g=m.get(k);if(!g){g={x,n:0,cost:0,prices:[]};m.set(k,g)}
+    g.n++;g.cost+=x.cost;if(x.price)g.prices.push(x.price);
+  });
+  return [...m.values()].sort((a,b)=>b.n-a.n||nm(a.x).localeCompare(nm(b.x),'tr'));
+}
+function kpis(){
+  const now=new Date(),today=now.toDateString(),act=active();
+  const t=act.filter(s=>new Date(s.date).toDateString()===today);
+  const m=act.filter(s=>{const d=new Date(s.date);return d.getMonth()===now.getMonth()&&d.getFullYear()===now.getFullYear()});
+  const open=act.filter(s=>!s.paid),mp=sum(m,profit);
+  const card=(l,v,s)=>'<div class="card kpi"><label>'+l+'</label><strong title="'+esc(v)+'">'+v+'</strong><span>'+s+'</span></div>';
+  return '<div class="grid">'
+    +card('Stoktaki telefon',data.devices.length,groups().length+' farklı model')
+    +card('Stok değeri',fmt(sum(data.devices,x=>x.cost)),'alış fiyatına göre')
+    +card('Bugünkü satış',fmt(sum(t,s=>s.total)),t.length+' satış · kâr '+fmt(sum(t,profit)))
+    +card('Bu ay satış',fmt(sum(m,s=>s.total)),m.length+' satış')
+    +card('Bu ay kâr',fmt(mp),m.length?'satış başı ort. '+fmt(mp/m.length):'henüz satış yok')
+    +card('Açık veresiye',fmt(sum(open,s=>s.total)),open.length+' kayıt tahsil edilmedi')
+    +'</div>';
+}
+function groupTable(){
+  const g=groups();
+  if(!g.length)return '<div class="empty">Stokta telefon yok. Aldığınız telefonları “+ Telefon ekle” ile girin.</div>';
+  return '<div class="table-wrap"><table class="cards"><thead><tr><th>Cihaz</th><th>Adet</th><th>Ort. alış</th><th>Satış fiyatı</th><th>Toplam maliyet</th><th></th></tr></thead><tbody>'+g.map(o=>{
+    const ps=o.prices,pr=!ps.length?'—':Math.min(...ps)===Math.max(...ps)?fmt(ps[0]):fmt(Math.min(...ps))+' – '+fmt(Math.max(...ps));
+    const q=[o.x.brand,o.x.model,o.x.storage].filter(Boolean).join(' ');
+    return '<tr>'+td('Cihaz','<b>'+esc(nm(o.x))+'</b><small>'+esc(sub(o.x))+'</small>','title')+td('Adet','<b>'+o.n+'</b>')+td('Ort. alış',fmt(o.cost/o.n))+td('Satış fiyatı',pr)+td('Toplam maliyet',fmt(o.cost))+td('','<button class="btn" data-filter="'+esc(q)+'">Telefonları göster</button>','act')+'</tr>';
+  }).join('')+'</tbody></table></div>';
+}
+const devHead='<thead><tr><th>Cihaz</th><th>IMEI / Seri no</th><th>Alış</th><th>Satış</th><th>Eklenme</th><th></th></tr></thead>';
+function devRows(list){
+  if(!list.length)return '<tr><td colspan="6" class="empty">'+(data.devices.length?'Aramayla eşleşen telefon yok.':'Stokta telefon yok. Aldığınız telefonları “+ Telefon ekle” ile girin.')+'</td></tr>';
+  return list.map(x=>'<tr>'+td('Cihaz','<b>'+esc(nm(x))+'</b><small>'+esc(sub(x))+'</small>','title')+td('IMEI',esc(x.imei||'—'),'mono')+td('Alış',fmt(x.cost))+td('Satış',x.price?'<b>'+fmt(x.price)+'</b><small>Kâr '+fmt(x.price-x.cost)+'</small>':'<span class="muted">—</span>')+td('Eklenme',dShort(x.addedAt))+td('','<div class="actions"><button class="btn primary" data-sell="'+esc(x.id)+'">Sattık</button><button class="btn" data-edit="'+esc(x.id)+'">Düzenle</button><button class="btn danger" data-del="'+esc(x.id)+'">Sil</button></div>','act')+'</tr>').join('');
+}
+const filteredDevices=()=>{const q=low(query).trim();return data.devices.filter(x=>low([x.brand,x.model,x.storage,x.color,x.imei].join(' ')).includes(q))};
+const devCount=l=>l.length+' telefon · maliyet '+fmt(sum(l,x=>x.cost));
+function salesTable(list,actions=true){
+  if(!list.length)return '<div class="empty">'+(data.sales.length?'Aramayla eşleşen satış yok.':'Henüz satış kaydı yok.')+'</div>';
+  return '<div class="table-wrap"><table class="cards"><thead><tr><th>Tarih</th><th>Müşteri</th><th>Telefon</th><th>Cihaz</th><th>IMEI</th><th>Ödeme</th><th>Tutar</th><th>Kâr</th>'+(actions?'<th></th>':'')+'</tr></thead><tbody>'+list.map(s=>{
+    const ret=s.status==='iade';
+    let pay=esc(s.payment);
+    if(s.payment==='Veresiye'&&!ret)pay+=' <span class="badge '+(s.paid?'ok':'low')+'">'+(s.paid?'Tahsil edildi':'Açık')+'</span>';
+    const btns=(!ret&&!s.paid?'<button class="btn" data-paid="'+esc(s.id)+'">Tahsil et</button>':'')+(!ret?'<button class="btn danger" data-return="'+esc(s.id)+'">İade</button>':'');
+    const act=actions?td('','<div class="actions">'+btns+'</div>',btns?'act':'act none'):'';
+    const tel=s.phone?'<a href="tel:'+esc(s.phone.replace(/[^\d+]/g,''))+'">'+esc(s.phone)+'</a>':'—';
+    return '<tr'+(ret?' class="returned"':'')+'>'+td('Tarih',dLong(s.date),'date')+td('Müşteri',esc(s.customer||'—'))+td('Telefon',tel)+td('Cihaz','<b>'+esc(s.name)+'</b><small>'+esc(sub(s))+(s.qty>1?' · '+s.qty+' adet':'')+'</small>','title')+td('IMEI',esc(s.imei||'—'),'mono')+td('Ödeme',pay)+td('Tutar','<b>'+fmt(s.total)+'</b>'+(ret?'<small><span class="badge out">İade edildi</span></small>':''))+td('Kâr',ret?'—':fmt(profit(s)))+act+'</tr>';
+  }).join('')+'</tbody></table></div>';
+}
+const filteredSales=()=>{const q=low(saleQuery).trim();return data.sales.filter(s=>low([s.customer,s.phone,s.name,s.storage,s.color,s.imei,s.payment].join(' ')).includes(q))};
+const salesSum=l=>{const a=l.filter(s=>s.status!=='iade');return l.length+' kayıt · '+fmt(sum(a,s=>s.total))+' ciro · '+fmt(sum(a,profit))+' kâr (iadeler hariç)'};
+
+function settingsPage(){
+  const last=lsGet(LKEY+'_lastBackup');
+  const mem=members.length?members.map(m=>'<li class="member"><span><b>'+esc(m.email)+'</b>'+(m.email===me?' <span class="badge ok">siz</span>':'')+'</span>'+(m.email===me?'':'<button class="btn danger" data-rmember="'+esc(m.email)+'">Çıkar</button>')+'</li>').join(''):'<li class="sub">Yükleniyor…</li>';
+  return header('Ayarlar')
+    +'<div class="two"><div class="card"><h2>Dükkân çalışanları</h2><p class="sub">Buradaki e-postalarla hesap açan herkes aynı stok ve satışları görür ve değiştirebilir.</p><ul class="members">'+mem+'</ul>'
+    +'<form id="memberForm" class="toolbar" novalidate><input id="memberEmail" name="email" type="email" inputmode="email" autocomplete="off" autocapitalize="off" placeholder="calisan@ornek.com" aria-label="Çalışanın e-postası"><button class="btn primary">Çalışan ekle</button></form>'
+    +'<p class="sub">Ekledikten sonra çalışan bu sayfayı açıp aynı e-postayla <b>Hesap oluştur</b> demeli.</p></div>'
+    +'<div class="card"><h2>Hesap</h2><p class="sub">Giriş yapan: <b>'+esc(me)+'</b></p><div class="stack"><button class="btn" data-logout>Çıkış yap</button></div></div></div>'
+    +'<div class="two" style="margin-top:16px"><div class="card"><h2>Yedekleme</h2><p class="sub">Kayıtlar dükkânın ortak veritabanında saklanır. Yine de ara sıra yedek almak iyidir.</p><p class="sub">Bu cihazda alınan son yedek: <b>'+(last?dLong(last):'hiç alınmadı')+'</b></p><div class="stack"><button class="btn primary" data-export>Yedeği indir (JSON)</button><label class="btn file-btn" for="importFile">Yedekten geri yükle</label><input type="file" id="importFile" class="sr-only" accept="application/json,.json"><button class="btn" data-csv>Satışları Excel’e aktar (CSV)</button></div></div>'
+    +'<div class="card"><h2>Tüm verileri sil</h2><p class="sub">Tüm telefon ve satış kayıtlarını herkes için kalıcı olarak siler. Önce yedek almanız önerilir.</p><div class="stack"><button class="btn danger" data-reset>Tüm verileri sil</button></div></div></div>';
+}
+function installTip(){
+  if(!isIOS||isStandalone||lsGet(LKEY+'_tip')==='1')return '';
+  return '<div class="card section tip"><div><b>iPhone’da uygulama gibi kullanın</b><p class="sub">Safari’de alttaki <b>Paylaş</b> düğmesine dokunun → <b>Ana Ekrana Ekle</b>. Tam ekran açılır, bir kez giriş yapmanız yeter.</p></div><button class="btn" data-tipclose>Tamam</button></div>';
+}
+
+function authScreen(){
+  const up=authTab==='up';
+  return '<div class="auth"><div class="card"><h1>Mobil Dükkân</h1><p class="sub">Stok ve satış paneline '+(up?'yeni hesap açın':'giriş yapın')+'.</p>'
+    +'<div class="seg" role="tablist"><button type="button" role="tab" aria-selected="'+!up+'" data-authtab="in" class="'+(up?'':'on')+'">Giriş yap</button><button type="button" role="tab" aria-selected="'+up+'" data-authtab="up" class="'+(up?'on':'')+'">Hesap oluştur</button></div>'
+    +'<form id="authForm" novalidate>'
+    +field('E-posta','authEmail','','ornek@gmail.com','email',{autocomplete:'email',autocapitalize:'off',inputmode:'email'})
+    +field('Şifre','authPass','',up?'En az 6 karakter':'Şifreniz','password',{autocomplete:up?'new-password':'current-password'})
+    +'<button class="btn primary wide"'+(authBusy?' disabled':'')+'>'+(authBusy?'Bekleyin…':up?'Hesap oluştur':'Giriş yap')+'</button></form>'
+    +(authMsg?'<p class="auth-msg" role="status">'+authMsg+'</p>':'')
+    +(up?'<p class="sub small">Hesap açabilmek için e-postanızın dükkân sahibi tarafından Ayarlar’dan eklenmiş olması gerekir.</p>':'')
+    +'</div></div>';
+}
+
+function render(){
+  const inApp=stage==='ready';
+  document.documentElement.classList.toggle('logged-out',!inApp);
+  document.querySelectorAll('nav [data-page]').forEach(b=>{const on=b.dataset.page===page;b.classList.toggle('active',on);if(on)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
+  el('asideNote').textContent=inApp?'Giriş: '+me:'';
+  let out='';
+  if(stage==='boot'||stage==='loading')out='<div class="loading" role="status">'+(stage==='boot'?'Açılıyor…':'Kayıtlar yükleniyor…')+'</div>';
+  else if(stage==='error')out='<div class="auth"><div class="card"><h1>Bağlanılamadı</h1><p class="sub">Sunucuya ulaşılamadı. İnternet bağlantınızı kontrol edin.</p><div class="stack"><button class="btn primary" data-retry>Tekrar dene</button></div></div></div>';
+  else if(stage==='auth')out=authScreen();
+  else if(stage==='notmember')out='<div class="auth"><div class="card"><h1>Erişim yok</h1><p class="sub"><b>'+esc(me)+'</b> hesabı bu dükkâna ekli değil. Dükkân sahibinden, Ayarlar → Dükkân çalışanları bölümüne bu e-postayı eklemesini isteyin.</p><div class="stack"><button class="btn primary" data-retry>Eklendim, tekrar dene</button><button class="btn" data-logout>Başka hesapla gir</button></div></div></div>';
+  else{
+    if(page==='ozet')out=header('Genel Bakış',addBtn)+(linkLost?'<div class="card section tip warn"><div><b>Canlı bağlantı koptu</b><p class="sub">Diğer telefondaki değişiklikler gecikebilir. Sayfayı yenileyin.</p></div></div>':'')+installTip()+kpis()
+      +'<div class="card section"><h2>Stoktaki modeller</h2>'+groupTable()+'</div>'
+      +'<div class="card section"><h2>Son satışlar</h2>'+salesTable(data.sales.slice(0,5))+'</div>';
+    if(page==='stok'){const l=filteredDevices();out=header('Telefonlar')+'<div class="card section"><div class="toolbar"><input id="search" type="search" enterkeyhint="search" autocomplete="off" aria-label="Telefon ara" placeholder="Marka, model, hafıza, renk veya IMEI ara" value="'+esc(query)+'">'+addBtn+'</div><div class="table-wrap"><table class="cards">'+devHead+'<tbody id="devBody">'+devRows(l)+'</tbody></table></div><div class="sub" id="devCount" style="padding-top:12px">'+devCount(l)+'</div></div>'}
+    if(page==='gecmis'){const l=filteredSales();out=header('Satış Geçmişi','<button class="btn" data-csv>CSV indir</button>')+'<div class="card section"><div class="toolbar"><input id="saleSearch" type="search" enterkeyhint="search" autocomplete="off" aria-label="Satış ara" placeholder="Müşteri, telefon, cihaz, IMEI veya ödeme ara" value="'+esc(saleQuery)+'"></div><div id="salesList">'+salesTable(l)+'</div><div class="sub" id="salesSum" style="padding-top:12px">'+salesSum(l)+'</div></div>'}
+    if(page==='ayar')out=settingsPage();
+  }
+  el('main').innerHTML=out;
+}
+function refresh(){
+  if(stage!=='ready')return;
+  if(page==='stok'&&el('devBody')){const l=filteredDevices();el('devBody').innerHTML=devRows(l);el('devCount').textContent=devCount(l);return}
+  if(page==='gecmis'&&el('salesList')){const l=filteredSales();el('salesList').innerHTML=salesTable(l);el('salesSum').textContent=salesSum(l);return}
+  if(page==='ayar'&&document.activeElement&&document.activeElement.id==='memberEmail')return;
+  render();
+}
+
+/* ---------- Pencereler ---------- */
+function showModal(html){el('modal').innerHTML=html;document.documentElement.classList.add('modal-open')}
+function closeModal(){el('modal').innerHTML='';document.documentElement.classList.remove('modal-open')}
+function datalist(id,key){
+  const v=[...new Set([...data.devices,...data.sales].map(x=>String(x[key]||'').trim()).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'tr'));
+  return '<datalist id="'+id+'">'+v.map(x=>'<option value="'+esc(x)+'">').join('')+'</datalist>';
+}
+function openDevice(x,prefill){
+  const fresh=!x;
+  const v=x||prefill||{brand:'',model:'',storage:'',color:'',imei:'',cost:'',price:''};
+  const ac={autocomplete:'off',autocorrect:'off'};
+  showModal('<div class="modal-bg"><form class="modal" id="deviceForm" novalidate><h2>'+(fresh?'Telefon ekle':'Telefonu düzenle')+'</h2>'
+    +datalist('dlBrand','brand')+datalist('dlModel','model')+datalist('dlStorage','storage')+datalist('dlColor','color')
+    +field('Marka','brand',v.brand,'örn. Apple','text',{...ac,list:'dlBrand'})
+    +field('Model','model',v.model,'örn. iPhone 15','text',{...ac,list:'dlModel'})
+    +field('Hafıza','storage',v.storage,'örn. 128 GB','text',{...ac,list:'dlStorage'})
+    +field('Renk','color',v.color,'örn. Siyah','text',{...ac,list:'dlColor'})
+    +field('IMEI / Seri no','imei',v.imei,'İsteğe bağlı','text',{...ac,autocapitalize:'characters',spellcheck:'false'})
+    +'<div class="field"><label for="imeiImage">IMEI ekran görüntüsü / fotoğrafı</label><input id="imeiImage" type="file" accept="image/*"><small class="sub" id="ocrStatus">Görselden 15 haneli IMEI okunup doğrulanarak alana yazılır.</small></div>'
+    +field('Alış fiyatı (₺)','cost',v.cost||'','Kaça aldınız?','text',numAttrs)
+    +field('Satış fiyatı (₺)','price',v.price||'','İsteğe bağlı, satarken de girilebilir','text',numAttrs)
+    +'<div class="modal-actions"><button type="button" class="btn" data-close>Vazgeç</button>'+(fresh?'<button class="btn" data-again>Kaydet + aynısından ekle</button>':'')+'<button class="btn primary">Kaydet</button></div></form></div>');
+  const form=el('deviceForm');let busy=false;
+  form.onsubmit=async e=>{
+    e.preventDefault();if(busy)return;
+    const again=!!(e.submitter&&e.submitter.dataset.again!==undefined);
+    const f=new FormData(form),g=k=>String(f.get(k)??'').trim(),n=k=>money(g(k));
+    if(!g('brand')||!g('model')){toast('Marka ve model zorunlu.');return}
+    const imei=g('imei').replace(/\s/g,'');
+    if(imei&&data.devices.some(d=>(!x||d.id!==x.id)&&d.imei===imei)){toast('Bu IMEI stokta başka bir telefona kayıtlı.');return}
+    if(/^\d{15}$/.test(imei)&&!imeiOk(imei)&&!await ask('Bu IMEI geçerli görünmüyor (kontrol hanesi tutmuyor). Yine de kaydedilsin mi?',{ok:'Kaydet'}))return;
+    if(fresh&&imei&&active().some(s=>s.imei===imei)&&!await ask('Bu IMEI daha önce satılmış görünüyor. Telefonu geri aldıysanız devam edin.',{ok:'Kaydet'}))return;
+    const item={brand:g('brand'),model:g('model'),storage:g('storage'),color:g('color'),imei,cost:n('cost'),price:n('price')};
+    if(!item.cost&&!await ask('Alış fiyatı girilmedi, kâr yanlış hesaplanır. Yine de kaydedilsin mi?',{ok:'Kaydet'}))return;
+    if(item.price&&item.price<item.cost&&!await ask('Satış fiyatı alış fiyatından düşük. Yine de kaydedilsin mi?',{ok:'Kaydet'}))return;
+    busy=true;
+    const rec=fresh?{id:uid(),...item,addedAt:nowIso()}:{...x,...item};
+    if(fresh&&again){openDevice(null,{...item,imei:''});setTimeout(()=>{const i=document.querySelector('#deviceForm [name=imei]');if(i)i.focus()},60)}
+    else closeModal();
+    if(await store.putDevice(rec)){
+      if(fresh&&again){const same=data.devices.filter(d=>low(nm(d)+d.storage+d.color)===low(nm(item)+item.storage+item.color)).length;toast('Eklendi. Bu modelden stokta '+same+' adet var. Sıradakinin IMEI’sini girin.')}
+      else toast(fresh?'Telefon eklendi':'Telefon güncellendi');
+    }
+    busy=false;
+  };
+}
+async function readImei(file){
+  const st=el('ocrStatus'),input=document.querySelector('#deviceForm [name=imei]');if(!st||!input)return;
+  st.textContent='Görsel okunuyor… (ilk seferde biraz sürebilir)';
+  try{
+    await loadTesseract();
+    const r=await Tesseract.recognize(file,'eng'),f=findImei(r.data.text);
+    if(!el('ocrStatus'))return;
+    if(f.valid){input.value=f.valid;st.textContent='IMEI bulundu ve doğrulandı: '+f.valid}
+    else if(f.any){input.value=f.any;st.textContent='15 haneli numara bulundu ama doğrulanamadı, lütfen kontrol edin: '+f.any}
+    else st.textContent='15 haneli IMEI bulunamadı. Görseli yakınlaştırıp tekrar deneyin.';
+  }catch{const s=el('ocrStatus');if(s)s.textContent='Görsel okunamadı. İnternet bağlantınızı kontrol edip tekrar deneyin.'}
+}
+function openSell(x){
+  showModal('<div class="modal-bg"><form class="modal" id="sellForm" novalidate><h2>Sattık: '+esc(nm(x))+'</h2><p class="lead">'+esc([x.storage,x.color,x.imei&&('IMEI '+x.imei)].filter(Boolean).join(' · ')||'—')+'</p>'
+    +(x.imei?'':field('IMEI / Seri no (isteğe bağlı)','imei','','Satılan telefonun IMEI numarası','text',{autocomplete:'off',autocorrect:'off',autocapitalize:'characters',spellcheck:'false'}))
+    +field('Satış fiyatı (₺)','price',x.price||'','Kaça sattınız?','text',numAttrs)
+    +field('Müşteri adı','customer','','Ad Soyad / Firma','text',{autocomplete:'off',autocapitalize:'words'})
+    +field('Müşteri telefonu','phone','','05xx xxx xx xx','tel',{autocomplete:'off'})
+    +'<div class="field"><label for="payment">Ödeme şekli</label><select id="payment" name="payment">'+['Kart','Nakit','Havale','Veresiye'].map(o=>'<option>'+o+'</option>').join('')+'</select></div>'
+    +line('Alış fiyatı',fmt(x.cost))+line('Kâr','<span id="sellProfit">—</span>')
+    +'<div class="modal-actions"><button type="button" class="btn" data-close>Vazgeç</button><button class="btn primary">Satışı kaydet</button></div></form></div>');
+  const form=el('sellForm'),E=form.elements;let busy=false;
+  const upd=()=>{const p=money(E.price.value);el('sellProfit').textContent=p?fmt(p-x.cost):'—'};
+  E.price.addEventListener('input',upd);upd();
+  form.onsubmit=async e=>{
+    e.preventDefault();if(busy)return;
+    const price=money(E.price.value),imei=x.imei||(E.imei?E.imei.value.replace(/\s/g,''):'');
+    const customer=E.customer.value.trim(),phone=E.phone.value.trim(),payment=E.payment.value;
+    if(price<=0){toast('Satış fiyatını girin.');return}
+    if(payment==='Veresiye'&&!customer&&!phone){toast('Veresiye satışta müşteri adı veya telefonu girin.');return}
+    if(!x.imei&&/^\d{15}$/.test(imei)&&!imeiOk(imei)&&!await ask('Bu IMEI geçerli görünmüyor. Yine de kaydedilsin mi?',{ok:'Kaydet'}))return;
+    if(imei&&active().some(s=>s.imei===imei)&&!await ask('Bu IMEI ile daha önce satış yapılmış. Yine de kaydedilsin mi?',{ok:'Kaydet'}))return;
+    if(price<x.cost&&!await ask('Satış fiyatı alış fiyatının ('+fmt(x.cost)+') altında. Zararına satış kaydedilsin mi?',{ok:'Kaydet',danger:true}))return;
+    busy=true;
+    const s={id:uid(),date:nowIso(),deviceId:x.id,brand:x.brand,model:x.model,name:nm(x),storage:x.storage,color:x.color,imei,qty:1,price,listPrice:x.price,cost:x.cost,total:price,customer,phone,payment,paid:payment!=='Veresiye',status:'ok',addedAt:x.addedAt};
+    closeModal();
+    if(await store.putSale(s)){await store.delDevice(x.id);toast('Satıldı: '+nm(x)+' · '+fmt(price)+' (kâr '+fmt(price-x.cost)+')')}
+    busy=false;
+  };
+}
+
+/* ---------- Dosya indirme (iPhone'da paylaşım menüsü) ---------- */
+const stamp=()=>nowIso().slice(0,10);
+async function download(name,content,type){
+  const blob=new Blob([content],{type});
+  if(isIOS&&navigator.canShare&&window.File){
+    try{const file=new File([blob],name,{type});if(navigator.canShare({files:[file]})){await navigator.share({files:[file],title:name});return true}}
+    catch(err){if(err&&err.name==='AbortError')return false}
+  }
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},4000);return true;
+}
+function csvText(){
+  const q=v=>'"'+String(v??'').replace(/"/g,'""')+'"',txt=v=>v?q('="'+v+'"'):'""';
+  const head=['Tarih','Müşteri','Telefon','Cihaz','Hafıza','Renk','IMEI','Adet','Satış fiyatı','Alış','Tutar','Kâr','Ödeme','Tahsil','Durum'];
+  const body=data.sales.map(s=>[q(new Date(s.date).toLocaleString('tr-TR')),q(s.customer),txt(s.phone),q(s.name),q(s.storage),q(s.color),txt(s.imei),s.qty||1,s.price,s.cost||0,s.total,s.status==='iade'?0:profit(s),q(s.payment),q(s.paid?'Evet':'Hayır'),q(s.status==='iade'?'İade':'Satış')].join(';'));
+  return '﻿'+[head.map(q).join(';'),...body].join('\r\n');
+}
+
+/* ---------- Giriş / veri yükleme ---------- */
+async function loadMembers(){const {data:rows,error}=await sb.from('members').select('email').order('added_at');if(!error){members=rows||[];if(page==='ayar')refresh()}}
+async function loadAll(){
+  const [d,s]=await Promise.all([sb.from('devices').select('*').limit(10000),sb.from('sales').select('*').order('date',{ascending:false}).limit(10000)]);
+  if(d.error||s.error)throw d.error||s.error;
+  data.devices=d.data.map(devFromRow);data.sales=s.data.map(saleFromRow);sortDevs();sortSales();
+}
+function live(){
+  if(channel){sb.removeChannel(channel);channel=null}
+  channel=sb.channel('dukkan')
+    .on('postgres_changes',{event:'*',schema:'public',table:'devices'},p=>{
+      if(p.eventType==='DELETE'){data.devices=data.devices.filter(x=>x.id!==p.old.id)}else{upsert(data.devices,devFromRow(p.new));sortDevs()}
+      refresh();
+    })
+    .on('postgres_changes',{event:'*',schema:'public',table:'sales'},p=>{
+      if(p.eventType==='DELETE'){data.sales=data.sales.filter(x=>x.id!==p.old.id)}else{upsert(data.sales,saleFromRow(p.new));sortSales()}
+      refresh();
+    })
+    .subscribe(st=>{
+      if(st==='SUBSCRIBED'){if(linkLost){linkLost=false;loadAll().then(refresh).catch(()=>{})}}
+      else if(st==='CHANNEL_ERROR'||st==='TIMED_OUT'){if(!linkLost){linkLost=true;if(page==='ozet')refresh()}}
+    });
+}
+async function enter(){
+  me=String(session&&session.user&&session.user.email||'').toLowerCase();
+  stage='loading';render();
+  try{
+    const {data:row,error}=await sb.from('members').select('email').eq('email',me).maybeSingle();
+    if(error)throw error;
+    if(!row){stage='notmember';render();return}
+    await loadAll();
+    stage='ready';render();live();loadMembers();
+  }catch(e){stage='error';render()}
+}
+function leave(){if(channel){sb.removeChannel(channel);channel=null}data={devices:[],sales:[]};members=[];me='';page='ozet';stage='auth';authMsg='';render()}
+let lastRefetch=0;
+document.addEventListener('visibilitychange',()=>{
+  if(document.visibilityState==='visible'&&stage==='ready'&&Date.now()-lastRefetch>15000){lastRefetch=Date.now();loadAll().then(refresh).catch(()=>{})}
+});
+
+async function doAuth(email,pass){
+  email=email.trim().toLowerCase();
+  if(!/^\S+@\S+\.\S+$/.test(email)){authMsg='Geçerli bir e-posta girin.';render();return}
+  if(pass.length<6){authMsg='Şifre en az 6 karakter olmalı.';render();return}
+  authBusy=true;authMsg='';render();
+  try{
+    if(authTab==='up'){
+      const {data:r,error}=await sb.auth.signUp({email,password:pass,options:{emailRedirectTo:location.origin+location.pathname}});
+      if(error)throw error;
+      if(r.session){session=r.session}
+      else{authTab='in';authMsg='Hesap oluşturuldu. <b>'+esc(email)+'</b> adresine gelen onay bağlantısına dokunun (açılan sayfa hata verirse önemli değil), sonra buradan giriş yapın.'}
+    }else{
+      const {error}=await sb.auth.signInWithPassword({email,password:pass});
+      if(error)throw error;
+    }
+  }catch(e){
+    const m=String(e&&e.message||'');
+    authMsg=/Invalid login/i.test(m)?'E-posta veya şifre hatalı.':/not confirmed/i.test(m)?'E-postanız henüz onaylanmamış. Gelen kutunuzdaki (ve gereksiz klasöründeki) onay bağlantısına dokunun.':/already registered/i.test(m)?'Bu e-postayla zaten hesap var, Giriş yap sekmesini kullanın.':/rate limit/i.test(m)?'Çok fazla deneme yapıldı. Biraz bekleyip tekrar deneyin.':/fetch|network/i.test(m)?'İnternet bağlantısı yok.':'İşlem yapılamadı: '+esc(m);
+  }
+  authBusy=false;if(stage==='auth')render();
+}
+
+/* ---------- Olaylar ---------- */
+document.addEventListener('click',async e=>{
+  if(e.target.classList.contains('modal-bg')&&!e.target.classList.contains('ask-bg')){closeModal();return}
+  const b=e.target.closest('button');if(!b||b.closest('#ask'))return;
+  const d=b.dataset;
+  if(d.authtab){authTab=d.authtab;authMsg='';render();return}
+  if(d.retry!==undefined){if(session)enter();else boot();return}
+  if(d.logout!==undefined){await sb.auth.signOut();return}
+  if(stage!=='ready')return;
+  if(d.page){page=d.page;render();window.scrollTo(0,0);if(page==='ayar')loadMembers();return}
+  if(d.new!==undefined){openDevice();return}
+  if(d.close!==undefined){closeModal();return}
+  if(d.filter!==undefined){query=d.filter;page='stok';render();window.scrollTo(0,0);return}
+  if(d.tipclose!==undefined){lsSet(LKEY+'_tip','1');render();return}
+  if(d.sell){const x=data.devices.find(v=>v.id===d.sell);if(x)openSell(x);return}
+  if(d.edit){const x=data.devices.find(v=>v.id===d.edit);if(x)openDevice(x);return}
+  if(d.del){
+    const x=data.devices.find(v=>v.id===d.del);if(!x)return;
+    if(await ask(nm(x)+' ('+sub(x)+(x.imei?', IMEI '+x.imei:'')+') stoktan silinsin mi?\nSattıysanız bunun yerine “Sattık” düğmesini kullanın.',{ok:'Sil',danger:true})){if(await store.delDevice(x.id))toast('Telefon silindi')}
+    return;
+  }
+  if(d.return){
+    const s=data.sales.find(x=>x.id===d.return);if(!s||s.status==='iade')return;
+    if(!await ask(s.name+' satışı ('+fmt(s.total)+') iade alınsın mı?\nTelefon stoğa geri eklenir.',{ok:'İade al',danger:true}))return;
+    if(!await store.putSale({...s,status:'iade',returnedAt:nowIso()}))return;
+    for(let i=0;i<(s.qty||1);i++){
+      const keepId=i===0&&s.deviceId&&!data.devices.some(v=>v.id===s.deviceId);
+      await store.putDevice(normDev({id:keepId?s.deviceId:uid(),brand:s.brand,model:s.model||s.name,storage:s.storage,color:s.color,imei:i===0?s.imei:'',cost:s.cost,price:s.listPrice||s.price,addedAt:nowIso()}));
+    }
+    toast('İade alındı, telefon stoğa geri eklendi');return;
+  }
+  if(d.paid){
+    const s=data.sales.find(x=>x.id===d.paid);if(!s)return;
+    if(await ask((s.customer||'Müşteri')+' · '+fmt(s.total)+' tahsil edildi olarak işaretlensin mi?',{ok:'Tahsil edildi'})){if(await store.putSale({...s,paid:true,paidAt:nowIso()}))toast('Tahsilat kaydedildi')}
+    return;
+  }
+  if(d.rmember){
+    if(!await ask(d.rmember+' dükkândan çıkarılsın mı? Bu kişi artık kayıtları göremez.',{ok:'Çıkar',danger:true}))return;
+    if(await run(sb.from('members').delete().eq('email',d.rmember))){toast('Çalışan çıkarıldı');loadMembers()}
+    return;
+  }
+  if(d.export!==undefined){if(await download('mobil-dukkan-yedek-'+stamp()+'.json',JSON.stringify({v:2,devices:data.devices,sales:data.sales},null,1),'application/json')){lsSet(LKEY+'_lastBackup',nowIso());render();toast(isIOS?'Yedeği “Dosyalar’a Kaydet” ile saklayın':'Yedek indirildi')}return}
+  if(d.csv!==undefined){if(!data.sales.length){toast('Dışa aktarılacak satış yok.');return}download('satislar-'+stamp()+'.csv',csvText(),'text/csv;charset=utf-8');return}
+  if(d.reset!==undefined){
+    if(!await ask('TÜM telefon ve satış kayıtları herkes için kalıcı olarak silinecek. Bu işlem geri alınamaz.',{ok:'Hepsini sil',danger:true}))return;
+    if(await store.replaceAll({devices:[],sales:[]})){page='ozet';render();toast('Tüm veriler silindi')}
+  }
+});
+document.addEventListener('submit',async e=>{
+  if(e.target.id==='authForm'){e.preventDefault();if(!authBusy)doAuth(el('authEmail').value,el('authPass').value);return}
+  if(e.target.id==='memberForm'){
+    e.preventDefault();
+    const email=el('memberEmail').value.trim().toLowerCase();
+    if(!/^\S+@\S+\.\S+$/.test(email)){toast('Geçerli bir e-posta girin.');return}
+    if(members.some(m=>m.email===email)){toast('Bu e-posta zaten ekli.');return}
+    if(await run(sb.from('members').insert({email}))){el('memberEmail').value='';toast('Eklendi. Çalışan aynı e-postayla hesap oluşturabilir.');loadMembers()}
+  }
+});
+document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;if(askDone){askDone(false);return}if(el('modal').innerHTML)closeModal()});
+document.addEventListener('input',e=>{
+  const t=e.target;
+  if(t.id==='search'){query=t.value;const l=filteredDevices();el('devBody').innerHTML=devRows(l);el('devCount').textContent=devCount(l);return}
+  if(t.id==='saleSearch'){saleQuery=t.value;const l=filteredSales();el('salesList').innerHTML=salesTable(l);el('salesSum').textContent=salesSum(l)}
+});
+document.addEventListener('change',async e=>{
+  const t=e.target;
+  if(t.id==='imeiImage'&&t.files&&t.files[0]){const f=t.files[0];t.value='';readImei(f);return}
+  if(t.id==='importFile'&&t.files&&t.files[0]){
+    const file=t.files[0];t.value='';
+    let d;try{d=JSON.parse(await file.text())}catch{d=null}
+    if(!valid(d)){toast('Bu dosya geçerli bir yedek değil.');return}
+    const next=migrate(d);
+    if(!await ask('Mevcut kayıtlar silinip yedekteki '+next.devices.length+' telefon ve '+next.sales.length+' satış yüklenecek. Devam edilsin mi?',{ok:'Yedeği yükle',danger:true}))return;
+    toast('Yedek yükleniyor…');
+    toast(await store.replaceAll(next)?'Yedek geri yüklendi':'Yedeğin bir kısmı yüklenemedi. Tekrar deneyin.');
+  }
+});
+
+/* ---------- Açılış ---------- */
+async function boot(){
+  stage='boot';render();
+  if(!window.supabase||!window.supabase.createClient){stage='error';render();return}
+  if(!sb){
+    sb=window.supabase.createClient(SB_URL,SB_KEY,{auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+    sb.auth.onAuthStateChange((ev,s)=>{
+      const prev=session&&session.user&&session.user.id;session=s;
+      if(ev==='SIGNED_OUT'||!s){leave();return}
+      if((ev==='SIGNED_IN'||ev==='INITIAL_SESSION')&&prev!==s.user.id)setTimeout(enter,0);
+    });
+  }
+  const {data:r,error}=await sb.auth.getSession();
+  if(error){stage='auth';render();return}
+  if(!r.session){stage='auth';render()}
+}
+try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch{}
+boot();
+})();
+</script>
+</body></html>
